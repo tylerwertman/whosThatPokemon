@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pokemon?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="newPoke()">
+    <h1>Who's That Pokemon?</h1>
+    
+    <div class="gameboy">
+        <div class="gameboyScr">
+            <div class="js" >
+                <img class = "sillhouette" src="" alt="">
+                <p class="textBox">Who's that Pokemon!?</p>
+            </div>
+            <p>GAMEBOY <span class="C">C</span><span class="O">O</span><span class="L">L</span><span class="O2">O</span><span class="R">R</span></p>
+        </div>  
+        <span class="nintendo">Nintendo</span>
+        <div class="gameboyCtrl">
+            <div class="dpad">
+                <div class="sqBtn"></div>
+                <div class="sqBtn activeBtn" onclick="shinyPoke()">^</div>
+                <div class="sqBtn"></div>
+                <div class="sqBtn activeBtn" onclick="frontPoke()"><</div>
+                <div class="sqBtn dot">•</div>
+                <div class="sqBtn activeBtn" onclick="backPoke()">></div>
+                <div class="sqBtn"></div>
+                <div class="sqBtn activeBtn" onclick="defaultPoke()">v</div>
+                <div class="sqBtn"></div>
+            </div>
+            <div class="AB">
+                <div class="cirBtn" onclick="newPoke()">B</div>
+                <div class="cirBtn A" onclick="revealPoke()">A</div>
+            </div>
+        </div>
+        <div class="ss">
+            <div class="start">
+                <div class="ssBtn"></div>
+                <div class="ssText">Start</div>
+            </div>
+            <div class="select">
+                <div class="ssBtn"></div>
+                <div class="ssText">Select</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

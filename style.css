@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+h1 {
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+.gameboy {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(129, 200, 129);
+    width: 600px;
+    height: 1000px;
+    border-radius: 20px;
+}
+.gameboy p {
+    color: white;
+    text-align: center;
+    padding-top: 13px;
+}
+.gameboyScr {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 30px;
+}
+.js {
+    background-color: whitesmoke;
+    background: radial-gradient(circle at center, white 50px, aqua 125px, red 150px);
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.js img {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    margin-top: 20px;
+}
+.sillhouette {
+    filter: grayscale(100%) brightness(0);
+}
+.js p {
+    background-color: red;
+    color: gold;
+    -webkit-text-stroke: 1.5px blue;
+    border: 2px dashed black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: monospace;
+}
+.gameboyScr p {
+    font-weight: bold;
+}
+.pokeName {
+    text-transform: capitalize;
+}
+.C {
+    color: red
+}
+.O {
+    color: purple
+}
+.L {
+    color: lime
+}
+.O2 {
+    color: yellow
+}
+.R {
+    color: cyan
+}
+.nintendo {
+    text-align: center;
+    padding: 10px 20px;
+    text-align: center;
+    /* filter:opacity(50%); */
+    margin: 25px 125px 35px;
+    font-size: 1.5rem;
+    border: 2px solid rgb(104, 161, 104);
+    border-radius: 25px;
+    display: inline-block;
+    color: rgb(104, 161, 104);
+}
+.gameboyCtrl{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 30px 150px;
+}
+.dpad {
+    width: 199px;
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow:visible; */
+}
+.AB {
+    /* width: 200px; */
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px
+}
+.A {
+    align-self: flex-start;
+}
+.sqBtn, .activeBtn, .cirBtn {
+    width: 50px;
+    height: 50px;
+}
+.activeBtn, .cirBtn, .dot{
+    background-color: rgb(75, 75, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.cirBtn {
+    border-radius: 100px;
+}
+.dot {
+    color: black;
+    font-size: 3rem;
+}
+.ss {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.ssBtn {
+    width: 40px;
+    height: 15px;
+    background-color: rgb(75, 75, 75);
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+}
+.start, .select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
