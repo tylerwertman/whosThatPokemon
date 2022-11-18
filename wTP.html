@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's that Pokemon?</title>
+    <link rel="stylesheet" href="wTP.css">
+</head>
+<body onload="pokeNew()">
+    <div class="container">
+        <h1>Who's that Pokemon?</h1>
+        <div class="gameboy">
+            <div class="gameboyScreen">
+                <div class="jsWindow">
+                    <img class="darken" src="" alt="">
+                    <p>Who's that Pokemon?</p>
+                </div>
+                <p>GAMEBOY COLOR</p>
+            </div>
+            <div class="gameboyBtns">
+                <div class="dpad">
+                    <div class="dpadBtn"></div>
+                    <div class="dpadBtn activeBtn" onclick="pokeShiny()">^</div>
+                    <div class="dpadBtn"></div>
+                    <div class="dpadBtn activeBtn" onclick="pokeFront()"><</div>
+                    <div class="dpadBtn blankBtn">•</div>
+                    <div class="dpadBtn activeBtn" onclick="pokeBack()">></div>
+                    <div class="dpadBtn"></div>
+                    <div class="dpadBtn activeBtn" onclick="pokeDefault()">v</div>
+                    <div class="dpadBtn"></div>
+                </div>
+                <div class="AB">
+                    <div class="B" onclick="pokeNew()">B</div>
+                    <div class="A" onclick="pokeReveal()">A</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="wTP.js"></script>
+</body>
+</html>
