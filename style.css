@@ -1,3 +1,4 @@
+/* Need to shrink down to fit without zoom */
 * {
     margin: 0;
     padding: 0;
@@ -10,36 +11,68 @@ h1 {
     padding: 50px;
     text-align: center;
 }
+.power {
+    position: relative;
+    top: 220px;
+    left: 125px;
+    color: whitesmoke;
+}
+#red {
+    font-size: 4rem;
+    color: red;
+    position: relative;
+    top: 20px;
+    left: -2px;
+}
+#p1 {
+    font-weight: bolder;
+}
+#p2 {
+    font-weight:100;
+}
+#p3 {
+    font:caption;
+}
 .gameboy {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 50px;
+    padding: 30px;
     background-color: rgb(129, 200, 129);
     width: 600px;
     height: 1000px;
-    border-radius: 20px;
+    border-radius: 30px;
+}
+.gameboyScr {
+    margin: 0 auto;
+    padding: 55px;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gameboyScr p {
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 .gameboy p {
     color: white;
     text-align: center;
-    padding-top: 13px;
-}
-.gameboyScr {
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
-    height: 400px;
-    background-color: rgb(50, 50, 50);
-    border-radius: 30px;
+    padding-top: 20px;
+    font-size: 2rem;
 }
 .js {
     background-color: whitesmoke;
     background: radial-gradient(circle at center, white 50px, aqua 125px, red 150px);
-    height: 90%;
+    height: 540px;
+    width: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 .js img {
     /* display: flex; */
@@ -50,46 +83,42 @@ h1 {
     align-self: center;
     margin-top: 20px;
 }
-.sillhouette {
-    filter: grayscale(100%) brightness(0);
-}
 .js p {
-    background-color: red;
+    /* background-color: red; */
     color: gold;
     -webkit-text-stroke: 1.5px blue;
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
     padding: 10px;
     font-weight: bold;
     font-size: 1.8rem;
     font-family: monospace;
 }
-.gameboyScr p {
-    font-weight: bold;
-}
 .pokeName {
     text-transform: capitalize;
 }
 .C {
-    color: red
+    color: red;
 }
 .O {
-    color: purple
+    color: purple;
+    font-size: 1.75rem;
 }
 .L {
-    color: lime
+    color: lime;
 }
 .O2 {
-    color: yellow
+    color: yellow;
+    font-size: 1.75rem;
 }
 .R {
-    color: cyan
+    color: cyan;
 }
 .nintendo {
     text-align: center;
     padding: 10px 20px;
     text-align: center;
     /* filter:opacity(50%); */
-    margin: 25px 125px 35px;
+    margin: 25px 175px 35px;
     font-size: 1.5rem;
     border: 2px solid rgb(104, 161, 104);
     border-radius: 25px;
@@ -99,7 +128,7 @@ h1 {
 .gameboyCtrl{
     display: flex;
     justify-content: space-between;
-    margin: 50px 30px 150px;
+    margin: 25px 30px 125px;
 }
 .dpad {
     width: 199px;
@@ -147,10 +176,14 @@ h1 {
     background-color: rgb(75, 75, 75);
     border-radius: 16px;
     margin-bottom: 10px;
-
+    
 }
 .start, .select {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(143, 222, 143);
 }
+    .sillhouette {
+        filter: grayscale(100%) brightness(0);
+    }
