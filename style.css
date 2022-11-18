@@ -8,67 +8,39 @@
 }
 h1 {
     margin: 0 auto;
-    padding: 50px;
+    padding: 15px;
     text-align: center;
-}
-.power {
-    position: relative;
-    top: 220px;
-    left: 125px;
-    color: whitesmoke;
-}
-#red {
-    font-size: 4rem;
-    color: red;
-    position: relative;
-    top: 20px;
-    left: -2px;
-}
-#p1 {
-    font-weight: bolder;
-}
-#p2 {
-    font-weight:100;
-}
-#p3 {
-    font:caption;
 }
 .gameboy {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 30px;
+    padding: 20px;
     background-color: rgb(129, 200, 129);
-    width: 600px;
-    height: 1000px;
+    width: 375px;
+    height: 600px;
     border-radius: 30px;
 }
 .gameboyScr {
     margin: 0 auto;
-    padding: 55px;
+    padding: 45px;
     width: 100%;
-    height: 500px;
+    height: 300px;
     background-color: rgb(50, 50, 50);
-    border-radius: 40px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .gameboyScr p {
     font-weight: bold;
-    margin-bottom: 20px;
-}
-.gameboy p {
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    font-size: 2rem;
+    /* margin-bottom: 20px; */
 }
 .js {
     background-color: whitesmoke;
-    background: radial-gradient(circle at center, white 50px, aqua 125px, red 150px);
-    height: 540px;
-    width: 85%;
+    background: radial-gradient(circle at center, white 15px, aqua 45px, red 150px);
+    height: 200px;
+    /* width: 85%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,18 +55,24 @@ h1 {
     align-self: center;
     margin-top: 20px;
 }
-.js p {
+#textBox {
     /* background-color: red; */
     color: gold;
-    -webkit-text-stroke: 1.5px blue;
+    -webkit-text-stroke: 1px blue;
     /* border: 2px dashed black; */
     padding: 10px;
     font-weight: bold;
-    font-size: 1.8rem;
+    font-size: 1.1rem;
     font-family: monospace;
 }
 .pokeName {
     text-transform: capitalize;
+}
+.gameboy p {
+    color: white;
+    text-align: center;
+    /* padding-top: 20px; */
+    font-size: 1.5rem;
 }
 .C {
     color: red;
@@ -115,11 +93,11 @@ h1 {
 }
 .nintendo {
     text-align: center;
-    padding: 10px 20px;
+    padding: 3px 0;
     text-align: center;
     /* filter:opacity(50%); */
-    margin: 25px 175px 35px;
-    font-size: 1.5rem;
+    margin: 10px 120px;
+    font-size: 1.25rem;
     border: 2px solid rgb(104, 161, 104);
     border-radius: 25px;
     display: inline-block;
@@ -128,28 +106,29 @@ h1 {
 .gameboyCtrl{
     display: flex;
     justify-content: space-between;
-    margin: 25px 30px 125px;
+    margin: 10px 20px 30px;
 }
 .dpad {
-    width: 199px;
+    width: 139px;
+    height: 105px;
     display: flex;
     flex-wrap: wrap;
     /* overflow:visible; */
 }
 .AB {
     /* width: 200px; */
-    height: 100px;
+    height: 75px;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    gap: 50px
+    gap: 25px
 }
 .A {
     align-self: flex-start;
 }
 .sqBtn, .activeBtn, .cirBtn {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 .activeBtn, .cirBtn, .dot{
     background-color: rgb(75, 75, 75);
@@ -161,14 +140,11 @@ h1 {
 .cirBtn {
     border-radius: 100px;
 }
-.dot {
-    color: black;
-    font-size: 3rem;
-}
 .ss {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-top: 25px;
 }
 .ssBtn {
     width: 40px;
@@ -184,6 +160,32 @@ h1 {
     align-items: center;
     color: rgb(143, 222, 143);
 }
-    .sillhouette {
-        filter: grayscale(100%) brightness(0);
-    }
+.sillhouette {
+    filter: grayscale(100%) brightness(0);
+}
+.power {
+position: absolute;
+top: 150px;
+left: 480px;
+color: whitesmoke;
+}
+#red {
+font-size: 2.5rem;
+color: red;
+position: relative;
+top: 10px;
+left: -2px;
+}
+#p1 {
+font-weight: bolder;
+}
+#p2 {
+font-weight:100;
+}
+#p3 {
+font:caption;
+}
+#p4 {
+    font-size: 1rem;
+    
+}
